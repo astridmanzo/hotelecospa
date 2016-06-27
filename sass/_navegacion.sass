@@ -1,0 +1,63 @@
+/* ***** Header (Logo y Navegación) ****** */
+
+
+/* ---------- Información de Contacto del Header ---------- */
+.header-info
+  text-align: right
+  color: $yellow
+  font-size: 16px
+  font-weight: 700
+  margin-top: -100px
+  margin-right: 20px 
+
+  li
+    padding: 0 10px
+    font-weight: 700
+    display: inline
+
+    a
+      color: $yellow
+
+    span
+      padding-right: 5px
+
+
+/* ---------- Menú de Navegación ---------- */
+#tf-menu
+  padding:  70px 0 20px 0
+  transition: all 0.8s
+  border-bottom: 3px solid $green
+  a.navbar-brand
+    text-transform: uppercase
+    font-size: 22px
+    color: #fff
+    margin-top: -70px
+    font-weight: 900
+  &.navbar-default .navbar-nav > li > a
+    text-transform: uppercase
+    color: #fff
+    font-size: 14px
+    letter-spacing: 1px
+    &:hover
+      color: $green !important
+
+.navbar-collapse
+  margin-top: 15px
+
+.active
+  text-decoration: underline
+.navbar-toggle
+  border-radius: 0
+
+.navbar-default .navbar-toggle
+  &:hover, &:focus
+    background-color: #FCAC45
+    border-color: #FCAC45
+  &:hover > .icon-bar
+    background-color: #FFF
+
+
+@media screen and (min-width: 768px)
+  .navbar-nav a
+    color: $blue !important
+

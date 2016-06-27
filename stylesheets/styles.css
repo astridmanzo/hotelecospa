@@ -1,0 +1,820 @@
+@charset "UTF-8";
+/* ***** Fonts, variables, global styles ****** */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+/* line 14, ../sass/_base.sass */
+body {
+  min-width: 320px;
+  position: relative;
+}
+
+/* line 18, ../sass/_base.sass */
+body, html {
+  font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #5a5a5a;
+}
+
+/* line 24, ../sass/_base.sass */
+h1 {
+  text-transform: uppercase;
+}
+/* line 26, ../sass/_base.sass */
+h1 strong {
+  font-weight: 900;
+}
+
+/* line 29, ../sass/_base.sass */
+h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* line 33, ../sass/_base.sass */
+h3 {
+  font-size: 18px;
+}
+
+/* line 36, ../sass/_base.sass */
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 39, ../sass/_base.sass */
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 43, ../sass/_base.sass */
+p {
+  font-family: "Montserrat", sans-serif;
+}
+/* line 45, ../sass/_base.sass */
+p.intro {
+  font-size: 16px;
+  margin: 12px 0 0;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 51, ../sass/_base.sass */
+a {
+  color: #66CC33;
+}
+/* line 53, ../sass/_base.sass */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #FCAC45;
+}
+
+/* line 57, ../sass/_base.sass */
+.section-title hr {
+  border-color: #fcac45;
+  border-width: 4px;
+  width: 60px;
+  float: left;
+  clear: both;
+}
+
+/* line 64, ../sass/_base.sass */
+.clearfix {
+  display: inline-block;
+}
+/* line 65, ../sass/_base.sass */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 74, ../sass/_base.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 77, ../sass/_base.sass */
+.clearfix {
+  display: block;
+}
+
+/* line 80, ../sass/_base.sass */
+ul, ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+
+/* ***** Header (Logo y Navegación) ****** */
+/* ---------- Información de Contacto del Header ---------- */
+/* line 5, ../sass/_navegacion.sass */
+.header-info {
+  text-align: right;
+  color: #fcac45;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: -100px;
+  margin-right: 20px;
+}
+/* line 13, ../sass/_navegacion.sass */
+.header-info li {
+  padding: 0 10px;
+  font-weight: 700;
+  display: inline;
+}
+/* line 18, ../sass/_navegacion.sass */
+.header-info li a {
+  color: #fcac45;
+}
+/* line 21, ../sass/_navegacion.sass */
+.header-info li span {
+  padding-right: 5px;
+}
+
+/* ---------- Menú de Navegación ---------- */
+/* line 26, ../sass/_navegacion.sass */
+#tf-menu {
+  padding: 70px 0 20px 0;
+  transition: all 0.8s;
+  border-bottom: 3px solid #66CC33;
+}
+/* line 30, ../sass/_navegacion.sass */
+#tf-menu a.navbar-brand {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  margin-top: -70px;
+  font-weight: 900;
+}
+/* line 36, ../sass/_navegacion.sass */
+#tf-menu.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+/* line 41, ../sass/_navegacion.sass */
+#tf-menu.navbar-default .navbar-nav > li > a:hover {
+  color: #66CC33 !important;
+}
+
+/* line 44, ../sass/_navegacion.sass */
+.navbar-collapse {
+  margin-top: 15px;
+}
+
+/* line 47, ../sass/_navegacion.sass */
+.active {
+  text-decoration: underline;
+}
+
+/* line 49, ../sass/_navegacion.sass */
+.navbar-toggle {
+  border-radius: 0;
+}
+
+/* line 53, ../sass/_navegacion.sass */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #FCAC45;
+  border-color: #FCAC45;
+}
+/* line 56, ../sass/_navegacion.sass */
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 61, ../sass/_navegacion.sass */
+  .navbar-nav a {
+    color: #009999 !important;
+  }
+}
+/* line 3, ../sass/_responsive.sass */
+label {
+  float: none !important;
+}
+
+/* line 6, ../sass/_responsive.sass */
+.pull-left.fnav, .pull-right.fnav {
+  float: none !important;
+  text-align: center;
+}
+
+/* line 10, ../sass/_responsive.sass */
+.hover-bg .hover-text {
+  padding: 12% 10%;
+}
+
+@media (max-width: 360px) {
+  /* line 14, ../sass/_responsive.sass */
+  .hover-bg .hover-text {
+    padding: 22% 10%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 19, ../sass/_responsive.sass */
+  .navbar-right {
+    background-color: #009999 !important;
+  }
+
+  /* line 21, ../sass/_responsive.sass */
+  .header-info {
+    display: none !important;
+  }
+
+  /* line 23, ../sass/_responsive.sass */
+  .front-title {
+    font-size: 20px;
+  }
+
+  /* line 25, ../sass/_responsive.sass */
+  .reser h1 {
+    font-size: 14px;
+  }
+
+  /* line 27, ../sass/_responsive.sass */
+  .contactanos h3 {
+    text-align: center !important;
+  }
+
+  /* line 29, ../sass/_responsive.sass */
+  .invitacion-spa {
+    background-position: center !important;
+  }
+  /* line 31, ../sass/_responsive.sass */
+  .invitacion-spa h1 {
+    font-size: 16px !important;
+    padding: 10px 10px !important;
+  }
+
+  /* line 34, ../sass/_responsive.sass */
+  #tf-home {
+    max-height: 550px;
+  }
+
+  /* line 36, ../sass/_responsive.sass */
+  .hotel-icon {
+    font-size: 35px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 42, ../sass/_responsive.sass */
+  .footer-nav {
+    text-align: center;
+  }
+  /* line 44, ../sass/_responsive.sass */
+  .footer-nav li {
+    display: inline !important;
+    padding: 0 10px;
+  }
+
+  /* line 47, ../sass/_responsive.sass */
+  .contenido-areas, .contenido-img {
+    text-align: center !important;
+  }
+}
+/* line 1, ../sass/_habitaciones.sass */
+#tf-services {
+  padding: 70px 0 70px 0;
+}
+
+/* line 3, ../sass/_habitaciones.sass */
+.space {
+  margin-top: 40px;
+}
+
+/* line 6, ../sass/_habitaciones.sass */
+.habitaciones {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+/* line 10, ../sass/_habitaciones.sass */
+.circle {
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/_habitaciones.sass */
+.circulos {
+  padding: 20px 0;
+}
+
+/* line 16, ../sass/_habitaciones.sass */
+.spinner {
+  border: 10px solid #009999 !important;
+  border-right-color: #66CC33 !important;
+  border-bottom-color: #66CC33 !important;
+}
+
+/* line 23, ../sass/_habitaciones.sass */
+.info-back p {
+  color: #fff !important;
+}
+
+/* line 26, ../sass/_habitaciones.sass */
+.subtitulo-habitaciones {
+  color: #999;
+  padding: 0 50px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* ***** Highlighted ****** */
+/* ---------- Fondo ---------- */
+/* line 5, ../sass/_front.sass */
+#tf-home {
+  background: url(../img/01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+}
+/* line 12, ../sass/_front.sass */
+#tf-home .overlay {
+  height: 450px;
+}
+
+/* line 14, ../sass/_front.sass */
+.content {
+  position: relative;
+  padding: 280px 0 0 0;
+  color: #fff;
+}
+/* line 18, ../sass/_front.sass */
+.content h1 {
+  display: inline;
+  border: solid 3px #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* ---------- Flecha ---------- */
+/* line 25, ../sass/_front.sass */
+.glyphicon-chevron-down {
+  padding: 15px 15px;
+  color: #fff;
+  border: 2px solid #b4b4b4;
+  border-radius: 100%;
+  font-size: 24px;
+  margin-top: 40px;
+  transition: all 0.5s;
+}
+/* line 33, ../sass/_front.sass */
+.glyphicon-chevron-down:hover {
+  background: #fcac45;
+  color: #ffffff;
+  border: 2px solid #fcac45;
+}
+
+/* line 1, ../sass/_footer.sass */
+footer {
+  background-color: #009999;
+  margin-top: 80px;
+}
+
+/* line 4, ../sass/_footer.sass */
+.footer-container {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+/* line 8, ../sass/_footer.sass */
+.footer-container h4 {
+  text-align: center;
+}
+
+/* line 10, ../sass/_footer.sass */
+.sub-footer {
+  background-color: #333;
+  text-align: center;
+  padding: 5px 0;
+}
+/* line 14, ../sass/_footer.sass */
+.sub-footer p {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* line 18, ../sass/_footer.sass */
+.footer-nav li, .social-footer li {
+  list-style-type: none;
+}
+
+/* line 21, ../sass/_footer.sass */
+.footer-nav li {
+  text-align: left;
+  margin-top: 10px;
+}
+/* line 24, ../sass/_footer.sass */
+.footer-nav li a {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fcac45;
+}
+/* line 28, ../sass/_footer.sass */
+.footer-nav li a:hover {
+  color: #333;
+}
+
+/* line 31, ../sass/_footer.sass */
+.social-footer {
+  text-align: center;
+}
+/* line 33, ../sass/_footer.sass */
+.social-footer li {
+  font-size: 30px;
+  display: inline;
+  padding: 0 10px;
+}
+/* line 37, ../sass/_footer.sass */
+.social-footer li a:hover {
+  color: #333;
+}
+
+/* line 40, ../sass/_footer.sass */
+.social-footer-location {
+  text-align: center;
+}
+/* line 42, ../sass/_footer.sass */
+.social-footer-location i {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #66CC33;
+}
+/* line 46, ../sass/_footer.sass */
+.social-footer-location i:hover {
+  color: #333;
+}
+
+/* line 1, ../sass/_spa.sass */
+.spa-area {
+  border-top: solid 1px lightgrey;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+/* line 5, ../sass/_spa.sass */
+.spa-area h1 {
+  padding: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* line 9, ../sass/_spa.sass */
+.spa-center {
+  text-align: center;
+  color: #fff;
+}
+/* line 12, ../sass/_spa.sass */
+.spa-center h3 {
+  font-size: 20px;
+}
+/* line 15, ../sass/_spa.sass */
+.spa-center .spa-icon img {
+  margin-top: 30px;
+}
+
+/* line 19, ../sass/_spa.sass */
+.spa-img {
+  background-color: #66CC33;
+  padding: 30px 0;
+}
+/* line 22, ../sass/_spa.sass */
+.spa-img h3 {
+  text-align: center;
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+/* line 26, ../sass/_spa.sass */
+.relax {
+  text-align: center;
+  color: #fff;
+}
+/* line 29, ../sass/_spa.sass */
+.relax i {
+  font-size: 50px;
+}
+/* line 31, ../sass/_spa.sass */
+.relax i:hover {
+  color: #fcac45;
+}
+
+/* line 33, ../sass/_spa.sass */
+.divboton {
+  text-align: center;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+/* line 37, ../sass/_spa.sass */
+.divboton button {
+  color: #66CC33;
+  font-weight: 700;
+  font-size: 18px;
+}
+/* line 41, ../sass/_spa.sass */
+.divboton button:hover {
+  background-color: #fff;
+  color: #fcac45;
+}
+
+/* line 1, ../sass/_hotel.sass */
+.hotel-area-img {
+  background: url(../img/01.jpg);
+  height: 100%;
+  padding: 70px 0;
+  margin-top: 60px;
+}
+
+/* line 6, ../sass/_hotel.sass */
+.hotel-area-title h1 {
+  text-align: center;
+  color: #66CC33;
+  padding: 30px 0 0 0;
+}
+
+/* line 10, ../sass/_hotel.sass */
+.subtitulo-hotel {
+  font-weight: normal;
+  color: #999;
+  font-size: 16px;
+  padding: 0 50px;
+}
+
+/* line 15, ../sass/_hotel.sass */
+h3 {
+  text-align: center;
+}
+
+/* line 17, ../sass/_hotel.sass */
+.hotel-pills li {
+  float: none !important;
+  display: inline-block;
+  border: 1px solid #009999;
+  border-radius: 4px 4px 0 0;
+}
+/* line 22, ../sass/_hotel.sass */
+.hotel-pills li a {
+  color: #66CC33;
+}
+
+/* line 24, ../sass/_hotel.sass */
+.hotel-icon {
+  font-size: 45px;
+}
+
+/* line 27, ../sass/_hotel.sass */
+.contenido-areas {
+  text-align: left;
+}
+/* line 29, ../sass/_hotel.sass */
+.contenido-areas h3 {
+  color: #009999;
+  font-weight: 700;
+}
+/* line 32, ../sass/_hotel.sass */
+.contenido-areas p {
+  color: #333;
+  padding-right: 20px;
+}
+
+/* line 35, ../sass/_hotel.sass */
+.contenido-img {
+  padding: 0 20px;
+}
+/* line 37, ../sass/_hotel.sass */
+.contenido-img img {
+  width: 100%;
+}
+
+/* line 39, ../sass/_hotel.sass */
+#exTab1 .tab-content, #exTab2 h3 {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+/* line 45, ../sass/_hotel.sass */
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0;
+}
+/* line 47, ../sass/_hotel.sass */
+#exTab3 .tab-content {
+  color: white;
+  background-color: #fff;
+  padding: 25px 15px;
+}
+
+/* line 1, ../sass/_contactanos.sass */
+.contactanos {
+  background: url(../img/2.jpg);
+  margin-top: -20px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #009999;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* line 12, ../sass/_contactanos.sass */
+.contactanos h1 {
+  display: inline;
+  border: solid 3px #009999;
+  border-radius: 10px;
+  padding: 15px;
+  color: #009999;
+  margin: 0 20px;
+}
+/* line 19, ../sass/_contactanos.sass */
+.contactanos h1:hover {
+  color: #fcac45;
+}
+/* line 21, ../sass/_contactanos.sass */
+.contactanos .reser {
+  margin-top: 90px;
+}
+/* line 23, ../sass/_contactanos.sass */
+.contactanos h3 {
+  text-align: center;
+  color: #009999;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+/* line 31, ../sass/_contactanos.sass */
+.contactanos .cont-container {
+  height: 350px;
+  background-color: #fff;
+  opacity: 0.85;
+  margin: 30px auto;
+}
+
+/* line 37, ../sass/_contactanos.sass */
+.social-contacto {
+  text-align: center;
+  margin-top: -110px;
+}
+/* line 40, ../sass/_contactanos.sass */
+.social-contacto li {
+  font-size: 60px;
+  display: inline;
+  padding: 0 10px;
+}
+/* line 44, ../sass/_contactanos.sass */
+.social-contacto li a:hover {
+  color: #333;
+}
+
+/* line 47, ../sass/_contactanos.sass */
+.direccionExtendida {
+  text-align: center;
+  padding: 50px 50px;
+  color: #999;
+  font-size: 16px;
+}
+
+/* line 53, ../sass/_contactanos.sass */
+.info-contacto {
+  padding: 80px 0 0 0;
+}
+/* line 55, ../sass/_contactanos.sass */
+.info-contacto i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+/* line 1, ../sass/_spavisita.sass */
+.visita-spa {
+  margin-top: 70px;
+}
+/* line 3, ../sass/_spavisita.sass */
+.visita-spa img {
+  max-width: 100%;
+}
+/* line 5, ../sass/_spavisita.sass */
+.visita-spa .texto-visita {
+  padding: 20px 50px;
+  text-align: center;
+}
+/* line 8, ../sass/_spavisita.sass */
+.visita-spa h3 {
+  color: #999;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+/* line 1, ../sass/_terapias.sass */
+.servicios-spa {
+  padding: 70px 0;
+}
+/* line 4, ../sass/_terapias.sass */
+.servicios-spa .spa-items {
+  text-align: center;
+}
+/* line 6, ../sass/_terapias.sass */
+.servicios-spa .spa-items p {
+  margin: 15px 15px;
+}
+/* line 8, ../sass/_terapias.sass */
+.servicios-spa .spa-items h2 {
+  font-size: 22px;
+  padding: 30px 0 10px 0;
+}
+/* line 11, ../sass/_terapias.sass */
+.servicios-spa .spa-items h3 {
+  padding-top: 10px;
+}
+
+/* line 1, ../sass/_invitacion-spa.sass */
+.invitacion-spa-bg {
+  margin-top: 50px;
+  background: url(../img/2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #009999;
+  height: 440px;
+}
+
+/* line 14, ../sass/_invitacion-spa.sass */
+.invitacion-spa {
+  background-color: #fff;
+  opacity: 1;
+  background-image: url(../img/spa/spa-invitacion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+  height: 380px;
+  margin: 30px auto;
+  padding: 40px;
+}
+/* line 24, ../sass/_invitacion-spa.sass */
+.invitacion-spa h3 {
+  color: #009999;
+  margin: 20% 0 50px 0;
+  font-size: 25px;
+  text-shadow: 1px 1px white;
+}
+/* line 29, ../sass/_invitacion-spa.sass */
+.invitacion-spa h1 {
+  display: inline;
+  border: solid 3px #009999;
+  border-radius: 10px;
+  padding: 15px;
+  color: #009999;
+}
+/* line 35, ../sass/_invitacion-spa.sass */
+.invitacion-spa h1:hover {
+  color: #fcac45;
+}
+
+/* line 38, ../sass/_invitacion-spa.sass */
+.texto-invitacion {
+  text-align: center;
+}
+
+/* line 1, ../sass/_reservaciones.sass */
+.reservebg {
+  background: url(../img/01.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 650px;
+  margin-top: -20px;
+}
+/* line 10, ../sass/_reservaciones.sass */
+.reservebg h1 {
+  color: #fff;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 15, ../sass/_reservaciones.sass */
+.reservebg h2 {
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 20, ../sass/_reservaciones.sass */
+.reserve {
+  background-color: #fff;
+  opacity: 0.95;
+  margin: 0 auto;
+  padding: 40px 0;
+}

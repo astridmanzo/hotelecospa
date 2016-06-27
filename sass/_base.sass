@@ -1,0 +1,84 @@
+/* ***** Fonts, variables, global styles ****** */
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+@font-face 
+  font-family: 'Glyphicons Halflings'
+  src: url('../fonts/glyphicons-halflings-regular.eot')
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
+
+$green: #66CC33
+$blue: #009999
+$yellow: #fcac45
+body
+  min-width: 320px
+  position: relative
+
+body, html
+  font-family: 'Montserrat', sans-serif
+  text-rendering: optimizeLegibility !important
+  -webkit-font-smoothing: antialiased !important
+  color: #5a5a5a
+
+h1
+  text-transform: uppercase
+  strong
+    font-weight: 900
+
+h2
+  text-transform: uppercase
+  margin: 0
+
+h3
+  font-size: 18px
+
+h4
+  text-transform: uppercase
+
+h5
+  text-transform: uppercase
+  font-weight: 700
+
+p
+  font-family: 'Montserrat', sans-serif
+  &.intro
+    font-size: 16px
+    margin: 12px 0 0
+    line-height: 24px
+    font-family: 'Montserrat', sans-serif
+
+a
+  color: $green
+  &:hover, &:focus
+    text-decoration: none
+    color: #FCAC45
+
+.section-title hr
+  border-color: #fcac45
+  border-width: 4px
+  width: 60px
+  float: left
+  clear: both
+
+.clearfix
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+  display: inline-block
+
+* html .clearfix
+  height: 1%
+
+.clearfix
+  display: block
+
+ul, ol
+  padding: 0
+  webkit-padding: 0
+  moz-padding: 0
+
